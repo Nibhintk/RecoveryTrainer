@@ -1,0 +1,34 @@
+// AI Recovery Trainer Workflow
+digraph {
+	rankdir=TB size=8
+	L [label="Landing Page"]
+	LS [label="Login / Signup"]
+	P [label="Personal Info Form
+(Name, Age, Gender, Surgery, Restrictions)"]
+	AI [label="AI Module
+- Recovery Plan
+- Meal Plan
+- Medicine Schedule"]
+	D [label="Dashboard / Home"]
+	R [label="Recovery Plan
+(Week-wise Timeline)"]
+	M [label="Meal Plan"]
+	MT [label="Medicine Tracker
++ Alerts"]
+	C [label="Daily Check-in
+(Pain, Mobility, Exercise)"]
+	PR [label="Progress Tracker
+(Graphs & Reports)"]
+	A [label="AI Assistant Chat
+(optional)"]
+	L -> LS
+	LS -> P
+	P -> AI
+	AI -> D
+	D -> R
+	D -> M
+	D -> MT
+	D -> C
+	D -> PR
+	D -> A
+}
